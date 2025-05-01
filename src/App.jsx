@@ -27,7 +27,7 @@ const App = () => {
     <div
       style={{
         display: "flex",
-        backgroundColor: "green",
+        backgroundColor: "yellow",
         justifyContent: "space-between",
         alignItems: "start",
         color: "black",
