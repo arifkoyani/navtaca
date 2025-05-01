@@ -50,8 +50,9 @@ const App = () => {
           backgroundColor: "black",
           justifyContent: "space-between",
           alignItems: "start",
-          color: "black",
-          border: "2px solid black",
+          color: "green",
+          border: "2px solid blue",
+          borderRadius: "20px",
           padding: "10px",
           background: "#eee",
         }}
