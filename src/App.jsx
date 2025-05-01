@@ -27,11 +27,11 @@ const App = () => {
     <div
       style={{
         display: "flex",
-        backgroundColor: "black",
+        backgroundColor: "green",
         justifyContent: "space-between",
         alignItems: "start",
         color: "black",
-        height: "200px",
+        height: "100px",
         padding: "10px",
         background: "#eee",
       }}
