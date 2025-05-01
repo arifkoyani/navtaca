@@ -10,12 +10,14 @@ const temperatureSlice = createSlice({
   reducers: {
     up(state) {
       if (state.temperature >= 10) {
+        alert("temperature can't be greater then 10");
         return;
       }
       state.temperature++;
     },
     down(state) {
       if (state.temperature <= 0) {
+        alert("temperature can't be less then 0");
         return;
       }
       state.temperature--;

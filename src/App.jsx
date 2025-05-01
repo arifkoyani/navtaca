@@ -36,13 +36,59 @@ const App = () => {
         background: "#eee",
       }}
     >
-      <button onClick={() => dispatch(decrement())}>Decrement</button>
-      <button onClick={() => dispatch(down())}>Down</button>
+      <button
+        style={{
+          background: "black",
+          padding: "5px 20px",
+          color: "white",
+          borderRadius: "10px",
+          cursor: "pointer",
+        }}
+        onClick={() => dispatch(decrement())}
+      >
+        Decrement
+      </button>
+      <button
+        style={{
+          background: "black",
+          padding: "5px 20px",
+          color: "white",
+          borderRadius: "10px",
+          cursor: "pointer",
+        }}
+        onClick={() => dispatch(down())}
+      >
+        Down
+      </button>
       <span>
-        Counter {value} & tem {temperature}
+        Counter :{value}
+        <hr /> <br /> Temperature : {temperature}
+        <hr />
       </span>
-      <button onClick={() => dispatch(increment())}>Increment</button>
-      <button onClick={() => dispatch(up())}>Up</button>
+      <button
+        style={{
+          background: "black",
+          padding: "5px 20px",
+          color: "white",
+          borderRadius: "10px",
+          cursor: "pointer",
+        }}
+        onClick={() => dispatch(increment())}
+      >
+        Increment
+      </button>
+      <button
+        style={{
+          background: "black",
+          padding: "5px 20px",
+          color: "white",
+          borderRadius: "10px",
+          cursor: "pointer",
+        }}
+        onClick={() => dispatch(up())}
+      >
+        Up
+      </button>
 
       <input
         style={{
@@ -59,7 +105,18 @@ const App = () => {
         type="number"
         ref={myref}
       />
-      <button onClick={handleIncrementByValue}>Set-Temperature</button>
+      <button
+        style={{
+          background: "black",
+          padding: "5px 20px",
+          color: "white",
+          borderRadius: "10px",
+          cursor: "pointer",
+        }}
+        onClick={handleIncrementByValue}
+      >
+        Set-Temperature
+      </button>
     </div>
   );
 };

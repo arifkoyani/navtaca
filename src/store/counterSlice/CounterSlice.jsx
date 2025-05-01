@@ -10,10 +10,19 @@ const counterSlice = createSlice({
 
   reducers: {
     increment(state) {
+      if (state.value >= 10) {
+        alert("cant greater then 10");
+        return;
+      }
       state.value++;
     },
 
     decrement(state) {
+      if (state.value <= 0) {
+        alert("cant less then 0");
+        return;
+      }
+
       state.value--;
     },
   },
