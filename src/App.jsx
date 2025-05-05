@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { increment } from "./store/counterSlice/CounterSlice.jsx";
 import { decrement } from "./store/counterSlice/CounterSlice.jsx";
@@ -10,6 +10,12 @@ const App = () => {
   const { value } = useSelector((state) => {
     return state.Counter;
   });
+
+  useEffect(() => {
+    fetch("http://localhost:4040/")
+      .then((res) => res.json())
+      .then((data) => alert(`this is backend datta ${data.name}`));
+  }, []);
 
   const { temperature } = useSelector((state) => {
     return state.Temperature;
