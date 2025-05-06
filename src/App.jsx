@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     fetch("http://localhost:4040/")
       .then((res) => res.json())
-      .then((data) => alert(`this is backend datta ${data.name}`));
+      .then((data) => console.log(data));
   }, []);
 
   const { temperature } = useSelector((state) => {
